@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Etch-a-sketch</title>
+</head>
+<body>
+    <div class='main-container'>
+        <h1 class='title'>Etch-A-Sketch</h1>
+        <div class='board-options'>
+            <select id='board-size'>
+                <option value="16">16 x 16</option>
+                <option value="32">32 x 32</option>
+                <option value="64">64 x 64</option>
+              </select>
+        </div>
+        <div class="buttons">
+            <button class='reset'>Reset</button>
+            <button class='black'>Black</button>
+            <button class='random'>Rainbow</button>
+        </div>
+        <div class='container' id='container'></div>
+    </div>
+    <script src='app.js'></script>
+</body>
+</html>

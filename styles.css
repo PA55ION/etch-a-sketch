@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Mukta', sans-serif;
+    margin: 0 auto;
+}
+
+.main-container {
+    text-align: center;
+}
+
+.title {
+    margin: 50px 0 15px 0;
+}
+
+.cells {
+    border: 1px solid black;
+
+}
+#container {
+    border: 2px solid black;
+    width: 516px;
+    height: 516px;
+    background-color: white;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#board-size {
+    width: 135px;
+    height: 35px;
+    font-size: 20px;
+    margin: 12px;
+}
+
+button {
+    width: 125px;
+    height: 35px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    margin: 8px 15px;
+    font-size: 18px;
+    
+}
+
+button:hover {
+    cursor: pointer;
+    background: linear-gradient(to right, #4568dc, #b06ab3);
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    color: white;
+}
+
+@keyframes pulse {
+    from {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+
+    50% {
+        -webkit-transform: scale3d(1.05, 1.05, 1.05);
+        transform: scale3d(1.05, 1.05, 1.05);
+    }
+
+    to {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}

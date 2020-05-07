@@ -12,18 +12,22 @@
         <div class='board-options'>
             <select id='board-size'>
                 <option value="16">16 x 16</option>
+                <option value="24">24 x 24</option>
                 <option value="32">32 x 32</option>
+                <option value="48">48 x 48</option>
                 <option value="64">64 x 64</option>
               </select>
+              <button id='resize'>Resize</button>
         </div>
         <div class="buttons">
-            <button class='reset' onclick="reset()">Reset</button>
-            <button class='black' onclick="getRandomColors()">Black</button>
-            <button class='random'>Rainbow</button>
+            <button id='reset' onclick="reset()">Reset</button>
+            <button id='black'>Black</button>
+            <button id='random'>Rainbow</button>
         </div>
         <div class='container' id='container'></div>
     </div>
-    <footer>Made with love by mai</footer>
+    <footer class='signature'>Made with <span class="iconify" data-icon="eva:heart-fill" data-inline="false"></span> by mai</footer>
     <script src='app.js'></script>
+    <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
 </body>
 </html>

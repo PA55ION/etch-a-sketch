@@ -44,7 +44,7 @@ function applyColor(e) {
 
     switch (color) {
         case 'black':
-            cell.style.background =  'black';
+            cell.style.background = 'black';
             break;
         case 'random':
             cell.style.background = getRandomColors();
@@ -56,14 +56,13 @@ function applyColor(e) {
     setTheme(color)
 }
 
-
 function setTheme(e) {
     color = e.target.id;
     color ? 'random' : 'black';
     console.log(`${color} was click`)
 }
 //change square size
-function changeSquareSize() { 
+function changeSquareSize() {
     //get a square size from the dropdown menu
     let size = Number(sizeOptions.value);
     //reset all div to empty state
